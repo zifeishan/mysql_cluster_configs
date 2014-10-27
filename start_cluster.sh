@@ -20,5 +20,6 @@ ndbmtd --ndb-connectstring=rambo.stanford.edu:1186 --ndb-nodeid=15
 sleep 10;
 echo "Starting SQL node 53..."
 mysqld --defaults-file=/lfs/local/0/zifei/mysql_cluster_data/53/my.cnf &
-sleep 10;
+echo "Waiting for ready..."
+sleep 30;
 

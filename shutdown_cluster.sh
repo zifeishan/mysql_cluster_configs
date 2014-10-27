@@ -4,4 +4,4 @@ echo "Shutting down data nodes..."
 ndb_mgm --ndb-connectstring=rambo.stanford.edu:1186 --execute=shutdown
 sleep 5;
 killall ndbd
-
+killall mysqld
